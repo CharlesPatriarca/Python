@@ -10,3 +10,4 @@ for hack in range (10):
 
 print (f'Dentro do intervalo entre 10 e 20 existem {intervalo} números')
 print (f'Fora do intervalo existem {noneIntervalo} números')
+

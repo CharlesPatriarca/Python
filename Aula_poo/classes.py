@@ -29,26 +29,26 @@ class Pessoa():
             print(f'{self.nome} está dormindo, não incomode ele.')
         else:
             self.comendo == False
-            print (f'{self.nome} pode comer ou falar, porque não está dormindo')
+            print(f'{self.nome} pode comer ou falar, porque não está dormindo')
 
     def pareComer(self, comida, bebida):
         if self.pararComer == True:
-            print (f'{self.nome} você deve parar de comer a {comida} e o {bebida}')
+            print(f'{self.nome} você deve parar de comer a {comida} e o {bebida}')
         else:
-            print (f'{self.nome} pode continuar comendo')
+            print(f'{self.nome} pode continuar comendo')
     def acordar(self):
         if self.acordando == True:
-            print (f'{self.nome} acorde parar comer.')
+            print(f'{self.nome} acorde parar comer.')
         else:
             self.comendo == False
-            print (f'{self.nome} já ta gordinho, não precisa acordar pra comer')
+            print(f'{self.nome} já ta gordinho, não precisa acordar pra comer')
 
     def pararFalar(self):
         if self.naoFale == True:
-            print (f'{self.nome} ninguém quer ouvir você não fale mais')
+            print(f'{self.nome} ninguém quer ouvir você não fale mais')
         else:
             self.naoFale == False
-            print (f'{self.nome} pode começar a falar')
+            print(f'{self.nome} pode começar a falar')
 
 
 class Banco():
@@ -151,7 +151,6 @@ class Retangulo(Forma):
 
     def calcularPerimetro(self, base, altura):
         self.perimetro = (base + altura) * 2
-
         print(f'O perímetro do retângulo é {self.perimetro}')
 
 
@@ -186,3 +185,42 @@ class Atleta():
 class Corredor(Atleta):
     def __init__(self):
         super().__init__()
+
+
+class Ingresso ():
+    def __init__(self, valor):
+        self.valor = valor
+        
+    def imprimeValor(self):
+        print (f'Valor do ingresso normal é R$ {self.valor}')
+
+class IngressoVip(Ingresso):
+    def __init__(self, valor):
+        super().__init__(valor)
+
+
+    def imprimeValor(self):
+        valorVip = self.valor * 1.5
+        print(f'R$ {valorVip}')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
